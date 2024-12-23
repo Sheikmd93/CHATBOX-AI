@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chatbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="chatbot-popup">
+        <!-- chat-header  -->
+        <div class="chat-header">
+            <div class="header-info">
+                <i class="fa-solid fa-robot usericon" height="50" width="50" viewBox="0 0 1024 1024"></i>
+                <h2 class="logo-text">ChatBot</h2>
+            </div>
+            <button id="close-chatbot"><i class="fa-solid fa-angle-down"></i></button>
+        </div>
+        <!-- chat-body  -->
+        <div class="chat-body">
+            <div class="message bot-message">
+
+                <i class="fa-solid fa-robot bot-avatar" height="50" width="50" viewBox="0 0 1024 1024"></i>
+
+                <div class="message-text">Hey ! There <br> How Can I Help You ?....</div>
+            </div>
+            <div class="message user-message">
+                <div class="message-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, autem!</div>
+            </div>
+            <div class="message bot-message thinking">
+                <i class="fa-solid fa-robot bot-avatar" height="50" width="50" viewBox="0 0 1024 1024"></i>
+                <div class="message-text">
+                    <div class="thinking-indicator">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- chat-footer  -->
+
+    <div class="chat-footer">
+        <form action="#" class="chat-form">
+            <textarea placeholder="Message..." class="message-input" required></textarea>
+            <div class="chat-controls">
+                <button type="button" id="emoji-picker"><i class="fa-regular fa-face-smile"></i></button>
+                <div class="file-upload-wrapper">
+                    <input type="file" accept="images/*" id="file-input" hidden>
+                    <img src="#" >
+                <!-- </div> -->
+                <button type="button" id="file-upload"><i class="fa-solid fa-paperclip"></i></button>
+                <button type="button" id="file-cancel"><i class="fa-solid fa-paperclip"></i></button>
+
+            </div>
+                <button id="send-message" type="submit"><i class="fa-solid fa-arrow-up-long"></i></button>
+
+            </div>
+        </form>
+
+
+    </div>
+
+
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="chatbox.js"> </script>
+
+</body>
+
+</html>
